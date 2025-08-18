@@ -1,0 +1,158 @@
+/* Import Jelly Belly font */
+@import url('https://fonts.googleapis.com/css2?family=JellyBelly&display=swap');
+
+/* Background */
+body {
+    margin: 0;
+    font-family: "JellyBelly", cursive;
+    background: linear-gradient(to right, lavender, #ffeef5);
+    color: #AA4465;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.app {
+    width: 95%;
+    height: 95vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+header {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+header h1 {
+    font-size: 42px;
+    font-weight: bold;
+    color: #AA4465;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+    letter-spacing: 2px;
+}
+
+
+.input-section {
+    display: flex;
+    margin: 15px 0;
+}
+
+.input-section input {
+    flex: 1;
+    padding: 12px;
+    border: 2px solid #AA4465;
+    border-radius: 8px 0 0 8px;
+    outline: none;
+}
+
+.input-section button {
+    padding: 0 20px;
+    font-size: 22px;
+    border: none;
+    background: #AA4465;
+    color: white;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.input-section button:hover {
+    background: #822f4c;
+}
+
+
+.task-container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    height: 100%;
+}
+
+.task-section {
+    flex: 1.2;
+    background: #fff0f5;
+    padding: 15px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.task-section h2 {
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 22px;
+    color: #AA4465;
+}
+
+
+.task-section.active {
+    margin-bottom: 20px;
+}
+
+.task-list {
+    flex: 1;
+    overflow-y: auto;
+    max-height: calc(100% - 50px);
+}
+
+
+.task-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ffe4ec;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.task-item span {
+    flex: 1;
+    margin-left: 10px;
+}
+
+.task-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.completed-item span {
+    text-decoration: line-through;
+    color: #777;
+}
+
+.delete-btn {
+    background: transparent;
+    border: none;
+    color: #AA4465;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.delete-btn:hover {
+    transform: scale(1.2);
+}
+
+
+.clear-btn {
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    background: #AA4465;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.clear-btn:hover {
+    background: #822f4c;
+}
