@@ -1,6 +1,6 @@
 # 📝 To-Do List
 
-A simple **To-Do List** built using **HTML, CSS, and JavaScript**.  
+A simple **To-Do List** built using **React**.  
 This app allows you to add, complete, and delete tasks easily with a clean UI.
 
 ---
@@ -12,4 +12,5 @@ This app allows you to add, complete, and delete tasks easily with a clean UI.
 - ❌ Delete individual tasks  
 - 🧹 Clear all tasks at once  
 - 🎨 Responsive and aesthetic UI with custom font  
+
 
